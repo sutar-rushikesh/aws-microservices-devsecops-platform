@@ -52,7 +52,7 @@ pipeline {
                 expression { params.ACTION == 'apply' }
             }
             steps {
-                dir('ecr-terraform') {
+                dir('aws-ecr-terraform') {
                     sh 'terraform apply -auto-approve'
                 }
             }
@@ -63,7 +63,7 @@ pipeline {
                 expression { params.ACTION == 'destroy' }
             }
             steps {
-                dir('ecr-terraform') {
+                dir('aws-ecr-terraform') {
                     sh 'terraform destroy -auto-approve'
                 }
             }
