@@ -25,7 +25,7 @@ pipeline {
 
         stage('Terraform init') {
             steps {
-                dir('ecr-terraform') {
+                dir('aws-ecr-terraform') {
                     sh 'terraform init --reconfigure'
                 }
             }
@@ -33,7 +33,7 @@ pipeline {
 
         stage('Terraform validate') {
             steps {
-                dir('ecr-terraform') {
+                dir('aws-ecr-terraform') {
                     sh 'terraform validate'
                 }
             }
@@ -41,7 +41,7 @@ pipeline {
 
         stage('Terraform plan') {
             steps {
-                dir('ecr-terraform') {
+                dir('aws-ecr-terraform') {
                     sh 'terraform plan'
                 }
             }
