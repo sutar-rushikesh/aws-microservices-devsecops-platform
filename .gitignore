@@ -1,0 +1,58 @@
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+.terraform.lock.hcl
+
+# Terraform variables / secrets
+*.tfvars
+*.tfvars.json
+
+# AWS
+.aws/
+credentials
+config
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# SSH / private keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Jenkins
+jenkins_home/
+*.log
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build
+dist/
+build/
+target/
