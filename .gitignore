@@ -5,7 +5,6 @@
 *.tfplan
 crash.log
 crash.*.log
-.terraform.lock.hcl
 
 # Terraform variables / secrets
 *.tfvars
