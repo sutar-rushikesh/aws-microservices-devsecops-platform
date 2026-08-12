@@ -8,7 +8,8 @@ The project demonstrates an end-to-end **DevSecOps workflow on AWS**, starting f
 
 ## 🏗️ Architecture Overview
 
-![alt text](Arch-dig.png)
+<img width="1536" height="936" alt="Arch-dig" src="https://github.com/user-attachments/assets/ed6075be-a259-410a-aa04-71aee07addc7" />
+
 
 ```text
                          ┌──────────────────────┐
